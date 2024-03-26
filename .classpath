@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="1 -Primeiro programa/App/src"/>
+	<classpathentry kind="src" path="10-SelectionSort/src"/>
+	<classpathentry kind="src" path="11-FactorialCalculator/src"/>
+	<classpathentry kind="src" path="12-HeroGame/src"/>
+	<classpathentry kind="src" path="2-Funcionalidades/src"/>
+	<classpathentry kind="src" path="3-SwingJava/src"/>
+	<classpathentry kind="src" path="4-Types/src"/>
+	<classpathentry kind="src" path="5-Converter/src"/>
+	<classpathentry kind="src" path="6-SwingSum/src"/>
+	<classpathentry kind="src" path="7-Operators/src"/>
+	<classpathentry kind="src" path="8-Calculator/src"/>
+	<classpathentry kind="src" path="9-RandomNumber/src"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

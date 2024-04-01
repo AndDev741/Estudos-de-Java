@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author And
+ *
+ */
+module SpecialMethods {
+}

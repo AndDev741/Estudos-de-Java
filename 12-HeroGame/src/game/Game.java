@@ -42,6 +42,7 @@ public class Game {
         Monster monster3 = new Monster("Singular", 300, 30, 3);
 
         System.out.println("Your first battle is against " + monster1.getName() + " ,Good luck");
+        //First Battle
         do{
         System.out.println("Your enemy stats: \n" + "Name: " + monster1.getName() + "\nLife: " + monster1.getLife() + "\nStrength: " + monster1.getStrenght() + "\nPower:" + monster1.power);
 
@@ -69,18 +70,26 @@ public class Game {
 
             if(atack > 0){
                 monster1.life = monster1.getLife() - atack;
-                hero.life = hero.getLife() - monster1.atack();
+                if(hero.hasShield() == true) {
+                	hero.shield = false;
+                }else {
+                	hero.life = hero.getLife() - monster1.atack();
+                }
+                
             }
         }catch(NumberFormatException e){
             System.out.println("Please, just choose numbers");
         }
         }
-        while(monster1.isAlive() == true && hero.isAlive() == true);
+        while(hero.isAlive() == true);
+        
+        if(hero.isAlive() == false) {
+        	System.out.println("Unfortunaly you dead, good luck in the next battle");
+        }
+        
+        scanner.close();
         
         
-
-        //Teste
-        System.out.println("Your hero is: " + hero.getName() + " ,your life points are " + hero.getLife() + " ,your strength is " + hero.getStrenght() + " ,you have shield: " + hero.hasShield());
 
     }
 }

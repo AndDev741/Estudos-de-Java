@@ -25,7 +25,7 @@ public class Library {
 	    System.out.println("Hello " + name);
 	    int i = 1;
 	    for (Book book : books) {
-	    	System.out.println(i + "- Livro: " + book.name);
+	    	System.out.println(i + "- Livro: " + book.getName());
 	    	i++;
 	    }
 	    
@@ -43,12 +43,12 @@ public class Library {
 	    String sucess = bookToBorrow.borrow_A_Book(name);
 	    if(sucess.equals("Borrowed with sucess") == true){
 	    	System.out.println(sucess);
-	    	System.out.println("Book: " + bookToBorrow.name);
-            System.out.println("Author: " + bookToBorrow.author);
-            System.out.println("Release: " + bookToBorrow.release);
-            System.out.println("Category: " + bookToBorrow.category);
+	    	System.out.println("Book: " + bookToBorrow.getName());
+            System.out.println("Author: " + bookToBorrow.getAuthor());
+            System.out.println("Release: " + bookToBorrow.getRelease());
+            System.out.println("Category: " + bookToBorrow.getCategory());
             System.out.println("Available: " + bookToBorrow.isAvailable());
-            System.out.println("Who borrowed: " + bookToBorrow.theBookIsWith);
+            System.out.println("Who borrowed: " + bookToBorrow.who_Is_The_Book_With());
 	    }else {
 	    	System.out.println(sucess);
 	    }

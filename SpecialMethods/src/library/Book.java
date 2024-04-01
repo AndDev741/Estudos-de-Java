@@ -1,12 +1,12 @@
 package library;
 
 public class Book {
-	public String name;
-	public String author;
-	public String release;
-	public String category;
-	public boolean available;
-	public String theBookIsWith;
+	private String name;
+	private String author;
+	private String release;
+	private String category;
+	private boolean available;
+	private String theBookIsWith;
 	
 	public Book(String name, String author, String release, String category) {
 		this.name = name;
@@ -68,9 +68,6 @@ public class Book {
 		}else {
 			return "The book are not available";
 		}
-	}
-	
-	
-	
+	}	
 	
 }

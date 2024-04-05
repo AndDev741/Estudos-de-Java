@@ -5,5 +5,5 @@
  * @author And
  *
  */
-module miniRPG {
+module Animals {
 }
